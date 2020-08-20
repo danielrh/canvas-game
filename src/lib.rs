@@ -14,7 +14,7 @@ pub fn main() -> Result<(), JsValue> {
     // Manufacture the element we're gonna append
     let val = document.create_element("div")?;
 
-    val.set_inner_html("Hello from Rust2");
+    val.set_inner_html("Hello from Rust4");
 
     body.append_child(&val)?;
 
@@ -48,7 +48,7 @@ pub fn main() -> Result<(), JsValue> {
 
     // Draw the left eye.
     context.move_to(65.0, 65.0);
-    context
+   context
         .arc(60.0, 65.0, 5.0, 0.0, f64::consts::PI * 2.0)
         .unwrap();
 
